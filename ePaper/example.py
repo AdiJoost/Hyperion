@@ -22,10 +22,11 @@ try:
     logging.info("init and Clear")
     epd.init()
     epd.Clear(0xFF)
+    logging.info("cleard")
 
     # Drawing on the image
-    font15 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 15)
-    font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
+    font15 = ImageFont.truetype('Font.ttc', 15)
+    font24 = ImageFont.truetype('Font.ttc', 24)
     
     if 1:
         logging.info("E-paper refresh")
